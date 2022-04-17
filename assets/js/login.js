@@ -6,25 +6,37 @@ let valida = [];
 function getInputValue(){
     let usuarioValue = inputUsuario.value;
     let senhaValue = inputSenha.value;
-    if(usuarioValue !== ""){
-        valida.push(usuarioValue);
-        verificaUsuario(usuarioValue, senhaValue)
-        let meuJSON = JSON.stringify(valida)
-        localStorage.setItem("sessao", meuJSON)
-    } else{
+    verificaEmpty(usuarioValue, senhaValue)    
+}
+
+function verificaEmpty(user, pass){
+    if(user == "" || pass == ""){
         alert("Preencha os campos para continuar")
+    } else{
+        verificaUsuario(user, pass)
     }
 }
+
+function pushInArray(usuario){
+    valida.push(usuario);
+}   
 
 function verificaUsuario(user, pass){
   let verifica = usuarios.some(i=>{
       if(i.Usuario.toUpperCase() === user.toUpperCase() && i.Senha === pass){
-          return true;
+        pushInArray(user.toUpperCase())
+        initSessao(valida)
+        return true;
       } else{
-          return false;
+        return false;
       }
   })
   gotoSystem(verifica)
+}
+
+function initSessao(userLogged){
+    let meuJSON = JSON.stringify(userLogged)
+    localStorage.setItem("sessao", meuJSON)
 }
 
 function gotoSystem(verificado){
