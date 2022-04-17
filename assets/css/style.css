@@ -1,0 +1,10 @@
+/* Estilos globais */
+@import './global/global.css';
+@import './global/header.css';
+
+/* Componentes */
+@import './utilidades/componentes.css';
+
+/* Formulários */
+@import './login/login.css';
+@import './formularios/ordem.css';

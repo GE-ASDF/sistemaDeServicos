@@ -1,0 +1,26 @@
+.barraDetalhe{
+    background-color: #000;
+    color:#fff;
+    text-transform: uppercase;
+    padding:5px;
+    font-family: sans-serif;
+    display: flex;
+}
+.barraDetalhe .close{
+    background-color: #fff;
+    cursor: pointer;
+}
+.barraDetalhe p{
+    margin-left: 10px;
+}
+.navegacaoMenu{
+    margin-top:20px;
+    display: flex;
+    border:1px solid #000;
+    padding:10px;
+}
+
+.cmd.cmdNovaOrdem{
+    background-color: #323232;
+}
+

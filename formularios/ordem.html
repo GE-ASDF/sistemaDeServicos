@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial | Sistema</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="containerAll container">
+    
+    <div class="container barraDetalhe">
+        <a href="../home.html">
+            <div class="close">
+                <img src="../assets/images/icons/exit16x16.png" alt="">
+            </div>
+        </a>
+        <p>Nova ordem de serviço</p>
+    </div>
+    <main id="mainOrdem">
+        
+        <form method="post" id="novaOrdem">
+            <div id="containerDados">
+                <p>Informações gerais</p>    
+                <div class="dados">
+                    <div class="esquerda">
+                        <label for="cliente">Cliente</label>
+                        <input type="text" name="cliente" id="cliente">
+
+                        <label for="Funcionario">Funcionario</label>
+                        <input type="text" name="Funcionario" id="Funcionario">
+
+                        <label for="tipoRecebimento">Tipo de recebimento</label>
+                        <select name="tipoRecebimento" id="tipoRecebimento">
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="debito">Cartão de débito</option>
+                            <option value="credito">Cartão de crédito</option>
+                            <option value="pix">PIX</option>
+                        </select>
+
+                        <label for="comissao">Comissão</label>
+                        <select name="comissao" id="comissao">
+                            <option value="1">10%</option>
+                            <option value="2">20%</option>
+                            <option value="3">30%</option>
+                            <option value="4">45%</option>
+                        </select>
+                    </div>
+                    <div class="direita">
+                        <label for="DataCadastro">Data de cadastro</label>
+                        <input type="date" name="data" id="DataCadastro">
+                        <label for="estado">Estado</label>
+                        <input type="text" name="data" id="DataCadastro">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="data" id="DataCadastro">
+                    </div>
+                </div>
+            </div>
+
+            <div id="detalheDoServico">
+                <p>Detalhes do serviço</p>
+                <div class="detalheDoServico">
+
+                    <label for="servico">Serviço</label>
+                    <input type="text" id="servico">
+                    <label for="servico">Preço</label>
+                    <input type="text" id="preco">
+                    <button class="cmd cmdInserir">Inserir</button>
+                </div>  
+                <div class="resultado">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </form>
+
+    </main>
+
+</div>
+    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/ordem.js"></script>
+</body>
+</html>

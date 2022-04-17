@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial | Sistema</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="containerAll container">
+
+    <main id="login" class="main">
+
+        <div class="containerLogin">
+            <div class="headerLogin">
+                <img src="assets/images/icons/outline_lock_black_48dp.png" alt="Imagem de cadeado">
+                <p>Acesso restrito</p>
+            </div>
+            <div class="form">
+
+            <form action="POST" id="formularioLogin">
+                <div class="input usuario">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" id="usuario">
+                </div>
+                <div class="input senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+            </form>
+           
+            <button class="cmd cmdLogin">
+                <img src="assets/images/icons/login32x32.png" alt="Botão de login">
+                    Login
+                </button>
+            
+            </div>
+        </div>
+
+    </main>
+
+</div>
+    <script src="assets/js/usuarios.js"></script>
+    <script src="assets/js/login.js"></script>
+    <script src="assets/js/noback.js"></script>
+</body>
+</html>

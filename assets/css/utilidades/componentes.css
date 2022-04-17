@@ -1,0 +1,29 @@
+.cmd{
+    width: 110px;
+    height: 110px;
+    background-position: center top;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right:2px;
+    cursor: pointer;
+    position:relative;
+}
+.cmdSuporte{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    background-color: transparent;
+    transition:all 0.2s ease;
+}
+.cmdSuporte:hover{
+    background-color: rgba(255,255,255, 0.195);
+    transition:all 0.2s ease;
+}

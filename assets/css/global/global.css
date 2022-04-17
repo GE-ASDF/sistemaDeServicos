@@ -1,0 +1,27 @@
+*, html, body{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.containerAll{
+    background: url("../../images/pngs/bgi.png") no-repeat;
+    background-position:right bottom;
+    height: 100vh;
+}

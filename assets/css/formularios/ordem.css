@@ -1,0 +1,46 @@
+#containerDados, .detalheDoServico{
+    background-color: #F3EDED;
+    display: flex;
+    justify-content: center;
+}
+#containerDados p{
+    background-color: #fff;
+    width: max-content;
+    height: max-content;
+    padding:5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.dados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:100px;
+    margin-top: 50px;
+    width: max-content;
+}
+
+.esquerda, .direita{
+    display: flex;
+    flex-direction: column;
+}
+.esquerda, .direita, input, select{
+    margin-bottom:10px;
+}
+.esquerda, .direita, .detalheDoServico label{
+    align-self: flex-start;
+    font-weight: bold;
+}
+input{
+    font-size: 18px;
+}
+
+.detalheDoServico label{
+    margin-left: 10px;
+}
+.cmdInserir{
+    background-color: #fff;
+    color:#000;
+    margin-left:10px;
+    width: 100px;
+    height: 25px;
+}
